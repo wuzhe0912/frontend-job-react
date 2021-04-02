@@ -8,11 +8,12 @@ const fs = require('fs');
   let end = true;
   const data = [];
   let filterPage = 1;
-  let lastPage = 53;
+  let lastPage = 10;
   while (end) {
-    const key = `前端工程師`;
+    let url = `https://www.cakeresume.com/jobs?refinementList%5Bprofession%5D%5B0%5D=tech_front-end-development&refinementList%5Bjob_type%5D%5B0%5D=full_time`;
+    let type = `per_year`;
     await page.goto(
-      `https://www.cakeresume.com/jobs?q=${key}&page=${filterPage}`
+      `${url}&refinementList%5Bsalary_type%5D=${type}&page=${filterPage}`
     );
     // 抓取網頁的 body
     let body = await page.content();
@@ -71,10 +72,7 @@ const fs = require('fs');
     return node.title.indexOf('後端', 0) === -1;
   });
 
-  fs.writeFileSync(
-    'src/crawler/result-cakeresume.json',
-    JSON.stringify(filterResult)
-  );
+  fs.writeFileSync('src/crawler/cake-year.json', JSON.stringify(filterResult));
 
   await browser.close();
 })();

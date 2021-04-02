@@ -12,5 +12,8 @@
   },
   "files.associations": {
     "*.js": "javascriptreact"  // 將所有 js 文件默認為 react 格式
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
   }
 }

@@ -1,12 +1,12 @@
 import React from 'react';
-import Home from './views/Home';
-// styles
-import './styles/main.scss';
+import GlobalStyle from 'constant/GlobalStyle';
+import Router from 'Router';
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Router></Router>
+      <GlobalStyle></GlobalStyle>
     </div>
   );
 }

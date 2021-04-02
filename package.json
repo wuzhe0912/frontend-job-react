@@ -1,21 +1,29 @@
 {
-  "name": "crawler-node-react",
+  "name": "frontend-jobs-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@auth0/auth0-react": "^1.4.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "chart.js": "^2.9.4",
     "cheerio": "^1.0.0-rc.5",
     "puppeteer": "^8.0.0",
     "react": "^17.0.2",
+    "react-chartjs-2": "^2.11.1",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.2.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "104": "node ./src/crawler/104.js",
     "dev": "react-scripts start",
     "crawler": "node ./src/crawler/104.js && node ./src/crawler/cakeresume.js",
+    "cake": "node ./src/crawler/cakeresume.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
