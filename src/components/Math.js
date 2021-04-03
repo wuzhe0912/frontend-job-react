@@ -6,9 +6,10 @@ export const getMedian = (arr) => {
   let median;
   // 要考慮目錄是從 0 開始算
   if (arr.length % 2 === 0) {
-    median = (arr[arr.length / 2] + arr[arr.length / 2 - 1]) / 2;
+    median =
+      (parseInt(arr[arr.length / 2]) + parseInt(arr[arr.length / 2 - 1])) / 2;
   } else {
-    median = arr[(arr.length - 1) / 2];
+    median = parseInt(arr[(arr.length - 1) / 2]);
   }
   return median;
 };

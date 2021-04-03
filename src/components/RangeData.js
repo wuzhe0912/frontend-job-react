@@ -1,6 +1,7 @@
 import Data104 from 'crawler/result-104.json';
 import DataCakeMonth from 'crawler/cake-month.json';
 import DataCakeYear from 'crawler/cake-year.json';
+import { parse } from 'yargs';
 
 export const filterRange = () => {
   const month104 = [];
@@ -108,11 +109,11 @@ export const filterRange = () => {
     return node !== undefined;
   });
 
-  const _yearRangUp104 = [];
+  const _yearRangeUp104 = [];
   _tempYearRangUp104.forEach((node) => {
     let target = node.replace('元', '');
     let subTarget = target.split(',').join('');
-    _yearRangUp104.push(subTarget);
+    _yearRangeUp104.push(subTarget);
   });
 
   // 整理並清除 cake 年薪面議
@@ -120,20 +121,57 @@ export const filterRange = () => {
     return node.salary !== '';
   });
 
+  // 將 104 的年薪和月薪分離
+  _Data104.forEach((node) => {
+    if (node.salary.indexOf('月薪', 0) !== -1) {
+      month104.push(node);
+    } else year104.push(node);
+  });
+
   const _tempDataCakeYear = [];
   _DataCakeYear.forEach((node) => {
-    let target = node.salary.replace(' TWD/year', '');
-    _tempDataCakeYear.push(target);
+    // 暫時先排除美金不做
+    if (node.salary.indexOf(' TWD/year', 0) !== -1) {
+      let target = node.salary.replace(' TWD/year', '');
+      _tempDataCakeYear.push(target);
+    }
   });
 
   // 分離 cake 年薪上下限
   _tempDataCakeYear.forEach((node) => {
-    let target = node.split('~');
+    let target = [];
+    target = node.split('~');
     yearRangeDownCake.push(target[0]);
     yearRangeUpCake.push(target[1]);
   });
 
-  console.log(yearRangeDownCake);
+  // 整理 cake 年薪下限
+  const _yearRangeDownCake = [];
+  yearRangeDownCake.forEach((node) => {
+    let target = [];
+    if (node.indexOf('M', 0) !== -1) {
+      target = parseFloat(node.replace('M ', '')) * 1000000;
+    } else {
+      target = parseFloat(node.replace('K ', '')) * 1000;
+    }
+    _yearRangeDownCake.push(target);
+  });
+
+  // 整理 cake 年薪上限
+  const _yearRangeUpCake = [];
+  const tempYearRangeUpCake = yearRangeUpCake.filter((node) => {
+    return node !== undefined;
+  });
+
+  tempYearRangeUpCake.forEach((node) => {
+    let target = [];
+    if (node.indexOf('M', 0) !== -1) {
+      target = parseFloat(node.replace('M', '')) * 1000000;
+    } else {
+      target = parseFloat(node.replace('K', '')) * 1000;
+    }
+    _yearRangeUpCake.push(target);
+  });
 
   const data = {
     monthDownArray104: _monthRangeDown104,
@@ -141,9 +179,9 @@ export const filterRange = () => {
     monthDownArrayCake: _monthRangeDownCake,
     monthUpArrayCake: _monthRangeUpCake,
     yearDownArray104: _yearRangeDown104,
-    yearUpArray104: _yearRangUp104,
-    yearDownArrayCake: [],
-    yearUpArrayCake: [],
+    yearUpArray104: _yearRangeUp104,
+    yearDownArrayCake: _yearRangeDownCake,
+    yearUpArrayCake: _yearRangeUpCake,
   };
   return data;
 };
