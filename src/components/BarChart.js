@@ -1,13 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Bar } from 'react-chartjs-2';
+import styled from 'styled-components';
 
 const BarChat = ({ data }) => {
-  useEffect(() => {
-    console.log('bar component', data);
-  });
-
   return (
-    <div>
+    <BarWrapper>
       <Bar
         className="bar"
         data={data}
@@ -16,8 +13,14 @@ const BarChat = ({ data }) => {
           maintainAspectRatio: true,
         }}
       ></Bar>
-    </div>
+    </BarWrapper>
   );
 };
+
+const BarWrapper = styled.div`
+  .chartjs-render-monitor {
+    /* height: 300px !important; */
+  }
+`;
 
 export default BarChat;

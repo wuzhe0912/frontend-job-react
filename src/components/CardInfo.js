@@ -6,7 +6,7 @@ import {
   Data104Info,
   DataCakeMonthInfo,
   DataCakeYearInfo,
-} from 'components/Data';
+} from 'components/AreaData';
 
 const CardInfo = () => {
   const list = [
@@ -14,21 +14,21 @@ const CardInfo = () => {
       id: 1,
       icon: <GoRepo className="icon" />,
       label: '資料來源：104',
-      value: Data104Info.length,
+      value: `${Data104Info.length}(筆)`,
       color: 'pink',
     },
     {
       id: 2,
       icon: <FiUsers className="icon" />,
       label: '資料來源：cakeresume(月薪)',
-      value: DataCakeMonthInfo.length,
+      value: `${DataCakeMonthInfo.length}(筆)`,
       color: 'purple',
     },
     {
       id: 3,
       icon: <FiUserPlus className="icon" />,
       label: '資料來源：cakeresume(年薪)',
-      value: DataCakeYearInfo.length,
+      value: `${DataCakeYearInfo.length}(筆)`,
       color: 'yellow',
     },
   ];
@@ -58,7 +58,6 @@ const CardWrap = styled.section`
   display: grid;
   grid-template-columns: 300px 300px 300px;
   justify-content: space-around;
-  margin-top: 20px;
 
   article {
     display: flex;
