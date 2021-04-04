@@ -13,8 +13,8 @@ const Login = () => {
       <Card>
         <img src={CardImg} alt=""></img>
         <div>
-          <h2>Frontend Jobs</h2>
-          <span>Data Visualization</span>
+          <h2>前端職缺</h2>
+          <span>資料視覺化</span>
         </div>
         <LoginBtn onClick={loginWithRedirect}>Login / Sign in</LoginBtn>
       </Card>
