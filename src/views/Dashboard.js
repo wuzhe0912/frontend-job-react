@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import NavBar from 'components/NavBar';
 import styled from 'styled-components';
+import NavBar from 'components/NavBar';
 import CardInfo from 'components/CardInfo';
 import Area from 'components/Area';
 import Transparency from 'components/Transparency';
@@ -8,6 +8,7 @@ import Range from 'components/Range';
 import RangeMode from 'components/RangeMode';
 import MonthSalaryNumber from 'components/MonthSalaryNumber';
 import YearSalaryNumber from 'components/YearSalaryNumber';
+import Footer from 'components/Footer';
 import { MEDIA_QUERY_MD } from 'constant/BreakPoint';
 
 const Dashboard = () => {
@@ -55,6 +56,7 @@ const Dashboard = () => {
           </Section>
         </Layout>
       </Wrapper>
+      <Footer></Footer>
     </Fragment>
   );
 };
@@ -64,7 +66,6 @@ const Wrapper = styled.main`
   width: 100%;
   min-height: 100vh;
   background-color: #f1f5f8;
-  color: #617d98;
 `;
 
 const Layout = styled.div`
@@ -93,6 +94,10 @@ const Title = styled.h2`
   ${MEDIA_QUERY_MD} {
     font-size: 20px;
     margin-bottom: 10px;
+
+    i {
+      font-size: 12px;
+    }
   }
 `;
 

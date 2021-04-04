@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     min-height: 100vh;
+    color: #617d98;
   }
 
   a {
