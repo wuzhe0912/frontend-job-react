@@ -5,7 +5,7 @@
 ## Use
 
 - `#React`、`#React Router`
-- `#Node`、`#cheerio`、`#爬蟲`
+- `#爬蟲`、`#Node`、`#puppeteer`、`#cheerio`
 - `#styled-components`
 - `#Chart.js`
 - `#Auth0`
