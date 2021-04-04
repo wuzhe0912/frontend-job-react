@@ -6,6 +6,8 @@ import Area from 'components/Area';
 import Transparency from 'components/Transparency';
 import Range from 'components/Range';
 import RangeMode from 'components/RangeMode';
+import MonthSalaryNumber from 'components/MonthSalaryNumber';
+import YearSalaryNumber from 'components/YearSalaryNumber';
 import { MEDIA_QUERY_MD } from 'constant/BreakPoint';
 
 const Dashboard = () => {
@@ -38,7 +40,18 @@ const Dashboard = () => {
             <RangeMode></RangeMode>
           </Section>
           <Section>
-            <Title># 平台各薪資範圍職缺數</Title>
+            <Title>
+              # 平台月薪範圍職缺數
+              <i>此處數據因資料為上下限範圍，職缺數具有重疊性，僅供參考</i>
+            </Title>
+            <MonthSalaryNumber></MonthSalaryNumber>
+          </Section>
+          <Section>
+            <Title>
+              # 平台年薪範圍職缺數
+              <i>承上，職缺數具有重疊性，僅供參考</i>
+            </Title>
+            <YearSalaryNumber></YearSalaryNumber>
           </Section>
         </Layout>
       </Wrapper>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { filterRange } from 'components/RangeData';
+import { filterRange } from 'components/CountSalary';
 import BarChart from 'components/BarChart';
 import { getMedian } from 'components/Math';
 import { Wrapper, Card } from 'constant/ShareStyle';

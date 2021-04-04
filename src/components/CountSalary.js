@@ -184,3 +184,125 @@ export const filterRange = () => {
   };
   return data;
 };
+
+// 職缺月薪 範圍數
+export const getMonthSalaryRange = (arr) => {
+  const below3 = [];
+  const below4 = [];
+  const below5 = [];
+  const below6 = [];
+  const below7 = [];
+  const below8 = [];
+  const below9 = [];
+  const below10 = [];
+  const more10 = [];
+
+  arr.forEach((node) => {
+    const IntNode = parseInt(node);
+    switch (true) {
+      case IntNode <= 30000:
+        below3.push(IntNode);
+        break;
+      case IntNode >= 30001 && IntNode <= 40000:
+        below4.push(IntNode);
+        break;
+      case IntNode >= 40001 && IntNode <= 50000:
+        below5.push(IntNode);
+        break;
+      case IntNode >= 50001 && IntNode <= 60000:
+        below6.push(IntNode);
+        break;
+      case IntNode >= 60001 && IntNode <= 70000:
+        below7.push(IntNode);
+        break;
+      case IntNode >= 70001 && IntNode <= 80000:
+        below8.push(IntNode);
+        break;
+      case IntNode >= 80001 && IntNode <= 90000:
+        below9.push(IntNode);
+        break;
+      case IntNode >= 90001 && IntNode <= 100000:
+        below10.push(IntNode);
+        break;
+      default:
+        more10.push(IntNode);
+    }
+  });
+
+  const data = [
+    below3.length,
+    below4.length,
+    below5.length,
+    below6.length,
+    below7.length,
+    below8.length,
+    below9.length,
+    below10.length,
+    more10.length,
+  ];
+
+  return data;
+};
+
+export const getYearSalaryRange = (arr) => {
+  const below50 = [];
+  const below70 = [];
+  const below90 = [];
+  const below100 = [];
+  const below110 = [];
+  const below120 = [];
+  const below130 = [];
+  const below140 = [];
+  const below150 = [];
+  const more150 = [];
+
+  arr.forEach((node) => {
+    const IntNode = parseInt(node);
+    switch (true) {
+      case IntNode <= 500000:
+        below50.push(IntNode);
+        break;
+      case IntNode >= 500001 && IntNode <= 700000:
+        below70.push(IntNode);
+        break;
+      case IntNode >= 700001 && IntNode <= 900000:
+        below90.push(IntNode);
+        break;
+      case IntNode >= 900001 && IntNode <= 1000000:
+        below100.push(IntNode);
+        break;
+      case IntNode >= 1000001 && IntNode <= 1100000:
+        below110.push(IntNode);
+        break;
+      case IntNode >= 1100001 && IntNode <= 1200000:
+        below120.push(IntNode);
+        break;
+      case IntNode >= 1200001 && IntNode <= 1300000:
+        below130.push(IntNode);
+        break;
+      case IntNode >= 1300001 && IntNode <= 1400000:
+        below140.push(IntNode);
+        break;
+      case IntNode >= 1400001 && IntNode <= 1500000:
+        below150.push(IntNode);
+        break;
+      default:
+        more150.push(IntNode);
+    }
+  });
+
+  const data = [
+    below50.length,
+    below70.length,
+    below90.length,
+    below100.length,
+    below110.length,
+    below120.length,
+    below130.length,
+    below140.length,
+    below150.length,
+    more150.length,
+  ];
+
+  return data;
+};
