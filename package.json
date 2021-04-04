@@ -20,9 +20,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "104": "node ./src/crawler/104.js",
     "dev": "react-scripts start",
     "crawler": "node ./src/crawler/104.js && node ./src/crawler/cakeresume.js",
+    "104": "node ./src/crawler/104.js",
     "cake": "node ./src/crawler/cakeresume.js",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -7,6 +7,7 @@ import {
   DataCakeMonthInfo,
   DataCakeYearInfo,
 } from 'components/AreaData';
+import { MEDIA_QUERY_MD } from 'constant/BreakPoint';
 
 const CardInfo = () => {
   const list = [
@@ -77,12 +78,12 @@ const CardWrap = styled.section`
   }
 
   div {
+    width: 220px;
     margin-left: 10px;
   }
 
   h3 {
     width: 100%;
-    text-align: center;
     font-size: 28px;
   }
 
@@ -101,6 +102,14 @@ const CardWrap = styled.section`
   .yellow {
     background: #fffbea;
     color: #f0b429;
+  }
+
+  ${MEDIA_QUERY_MD} {
+    grid-template-columns: 1fr;
+
+    article {
+      margin-bottom: 10px;
+    }
   }
 `;
 

@@ -8,10 +8,10 @@ const fs = require('fs');
   let end = true;
   const data = [];
   let filterPage = 1;
-  let lastPage = 10;
+  let lastPage = 60;
   while (end) {
     let url = `https://www.cakeresume.com/jobs?refinementList%5Bprofession%5D%5B0%5D=tech_front-end-development&refinementList%5Bjob_type%5D%5B0%5D=full_time`;
-    let type = `per_year`;
+    let type = `per_month`;
     await page.goto(
       `${url}&refinementList%5Bsalary_type%5D=${type}&page=${filterPage}`
     );
@@ -72,7 +72,7 @@ const fs = require('fs');
     return node.title.indexOf('後端', 0) === -1;
   });
 
-  fs.writeFileSync('src/crawler/cake-year.json', JSON.stringify(filterResult));
+  fs.writeFileSync('src/crawler/cake-month.json', JSON.stringify(filterResult));
 
   await browser.close();
 })();

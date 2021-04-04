@@ -54,26 +54,27 @@ export const filterInfo104 = () => {
     }
   });
 
+  const hsinchuLength =
+    parseInt(hsinchu.length) + parseInt(hsinchuCounty.length);
+
   const changhuaLength = parseInt(changhua.length);
   const yunlinLength = parseInt(yunlin.length);
   const chiayiLength = parseInt(chiayi.length);
   const yilanLength = parseInt(yilan.length);
   const hualienLength = parseInt(hualien.length);
 
-  const lost = changhuaLength + yunlinLength + chiayiLength;
-  const east = yilanLength + hualienLength;
+  const lost =
+    changhuaLength + yunlinLength + chiayiLength + yilanLength + hualienLength;
 
   const data = [
     taipei.length,
     newTaipei.length,
     taoyuan.length,
-    hsinchu.length,
-    hsinchuCounty.length,
+    hsinchuLength,
     taichung.length,
-    lost,
     tainan.length,
     kaohsiung.length,
-    east,
+    lost,
     other.length,
   ];
 
@@ -150,16 +151,19 @@ export const filterInfoCake = () => {
     }
   });
 
+  const taoyuanLength = parseInt(taoyuan.length);
+  const changhuaLength = parseInt(changhua.length);
+  const NantouLength = parseInt(Nantou.length);
+  const tainanLength = parseInt(tainan.length);
+  const lost = taoyuanLength + changhuaLength + NantouLength + tainanLength;
+
   const data = [
     taipei.length,
     newTaipei.length,
-    taoyuan.length,
     hsinchu.length,
     taichung.length,
-    changhua.length,
-    Nantou.length,
-    tainan.length,
     kaohsiung.length,
+    lost,
     sea.length,
     other.length,
   ];

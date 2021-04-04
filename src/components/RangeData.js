@@ -1,7 +1,6 @@
 import Data104 from 'crawler/result-104.json';
 import DataCakeMonth from 'crawler/cake-month.json';
 import DataCakeYear from 'crawler/cake-year.json';
-import { parse } from 'yargs';
 
 export const filterRange = () => {
   const month104 = [];

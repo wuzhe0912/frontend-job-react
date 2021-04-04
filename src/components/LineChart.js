@@ -1,15 +1,27 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
-import styled from 'styled-components';
 
-const LineChart = () => {
+const LineChart = ({ data }) => {
   return (
-    <LineWrapper>
-      <Line></Line>
-    </LineWrapper>
+    <div>
+      <Line
+        className="line"
+        data={data}
+        options={{
+          maintainAspectRatio: true,
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  beginAtZero: true,
+                },
+              },
+            ],
+          },
+        }}
+      ></Line>
+    </div>
   );
 };
-
-const LineWrapper = styled.div``;
 
 export default LineChart;

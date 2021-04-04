@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
 import { filterInfo104, filterInfoCake } from 'components/AreaData';
 import BarChart from 'components/BarChart';
+import { Wrapper, Card } from 'constant/ShareStyle';
 
 const Area = () => {
   const [barChartData, setBarChartData] = useState({});
@@ -20,34 +20,38 @@ const Area = () => {
         '台北',
         '新北',
         '桃園',
-        '竹市',
-        '竹縣',
+        '新竹',
         '台中',
-        '失落的縣市們',
         '台南',
         '高雄',
-        '宜花',
+        '邊緣縣市集散地',
         '海外',
       ],
       datasets: [
         {
-          label: '',
+          label: '104',
           data: res104,
           backgroundColor: [
             '#ff9100',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)',
+            '#112d4e',
+            '#3f72af',
+            '#61c0bf',
+            '#ffc7c7',
+            '#f08a5d',
+            '#ffd460',
+            '#d4a5a5',
+            '#13ab67',
           ],
           borderColor: [
             '#ff9100',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)',
+            '#112d4e',
+            '#3f72af',
+            '#61c0bf',
+            '#ffc7c7',
+            '#f08a5d',
+            '#ffd460',
+            '#d4a5a5',
+            '#13ab67',
           ],
           borderWidth: 1,
         },
@@ -58,13 +62,10 @@ const Area = () => {
       labels: [
         '台北',
         '新北',
-        '桃園',
         '新竹',
         '台中',
-        '彰化',
-        '南投',
-        '台南',
         '高雄',
+        '邊緣縣市集散地',
         '海外',
         '沒寫公司地址',
       ],
@@ -74,19 +75,23 @@ const Area = () => {
           data: resCake,
           backgroundColor: [
             '#13ab67',
-            'rgba(54, 162, 235, 0.2)',
-            'rgba(255, 206, 86, 0.2)',
-            'rgba(75, 192, 192, 0.2)',
-            'rgba(153, 102, 255, 0.2)',
-            'rgba(255, 159, 64, 0.2)',
+            '#112d4e',
+            '#3f72af',
+            '#61c0bf',
+            '#ffc7c7',
+            '#f08a5d',
+            '#ffd460',
+            '#d4a5a5',
           ],
           borderColor: [
             '#13ab67',
-            'rgba(54, 162, 235, 1)',
-            'rgba(255, 206, 86, 1)',
-            'rgba(75, 192, 192, 1)',
-            'rgba(153, 102, 255, 1)',
-            'rgba(255, 159, 64, 1)',
+            '#112d4e',
+            '#3f72af',
+            '#61c0bf',
+            '#ffc7c7',
+            '#f08a5d',
+            '#ffd460',
+            '#d4a5a5',
           ],
           borderWidth: 1,
         },
@@ -95,25 +100,15 @@ const Area = () => {
   };
 
   return (
-    <AreaWrapper>
+    <Wrapper>
       <Card>
         <BarChart data={barChartData}></BarChart>
       </Card>
       <Card>
         <BarChart data={cakeBarChartData}></BarChart>
       </Card>
-    </AreaWrapper>
+    </Wrapper>
   );
 };
-
-const AreaWrapper = styled.section`
-  display: flex;
-  justify-content: space-around;
-`;
-
-const Card = styled.article`
-  width: 500px;
-  height: 100%;
-`;
 
 export default Area;

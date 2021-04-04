@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
 import { filterRange } from 'components/RangeData';
 import BarChart from 'components/BarChart';
 import { getMedian } from 'components/Math';
+import { Wrapper, Card } from 'constant/ShareStyle';
 
 const Range = () => {
   const [barChartData, setBarChartData] = useState({});
@@ -71,25 +71,15 @@ const Range = () => {
   };
 
   return (
-    <RangeWrapper>
+    <Wrapper>
       <Card>
         <BarChart data={barChartData}></BarChart>
       </Card>
       <Card>
         <BarChart data={yearBarChartData}></BarChart>
       </Card>
-    </RangeWrapper>
+    </Wrapper>
   );
 };
-
-const RangeWrapper = styled.section`
-  display: flex;
-  justify-content: space-around;
-`;
-
-const Card = styled.article`
-  width: 500px;
-  height: 100%;
-`;
 
 export default Range;

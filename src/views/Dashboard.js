@@ -5,6 +5,8 @@ import CardInfo from 'components/CardInfo';
 import Area from 'components/Area';
 import Transparency from 'components/Transparency';
 import Range from 'components/Range';
+import RangeMode from 'components/RangeMode';
+import { MEDIA_QUERY_MD } from 'constant/BreakPoint';
 
 const Dashboard = () => {
   return (
@@ -12,22 +14,32 @@ const Dashboard = () => {
       <NavBar></NavBar>
       <Wrapper>
         <Layout>
-          <Title>
-            <h2># 雙平台 前端工程師職缺 資料視覺化</h2>
-          </Title>
-          <CardInfo></CardInfo>
-          <Title>
-            <h2># 平台地區職缺數量對比</h2>
-          </Title>
-          <Area></Area>
-          <Title>
-            <h2># 平台待遇透明度結構</h2>
-          </Title>
-          <Transparency></Transparency>
-          <Title>
-            <h2># 平台薪資中位數</h2>
-          </Title>
-          <Range></Range>
+          <Section>
+            <Title># 雙平台 前端工程師職缺 資料視覺化</Title>
+            <CardInfo></CardInfo>
+          </Section>
+          <Section>
+            <Title>
+              # 平台地區職缺數量對比
+              <i>若縣市職缺數低於 5，暫時劃入邊緣區</i>
+            </Title>
+            <Area></Area>
+          </Section>
+          <Section>
+            <Title># 平台待遇透明度結構</Title>
+            <Transparency></Transparency>
+          </Section>
+          <Section>
+            <Title># 平台薪資範圍(上下限)中位數</Title>
+            <Range></Range>
+          </Section>
+          <Section>
+            <Title># 平台薪資範圍(上下限)眾數</Title>
+            <RangeMode></RangeMode>
+          </Section>
+          <Section>
+            <Title># 平台各薪資範圍職缺數</Title>
+          </Section>
         </Layout>
       </Wrapper>
     </Fragment>
@@ -48,9 +60,27 @@ const Layout = styled.div`
   margin: 0 auto;
 `;
 
-const Title = styled.div`
-  margin: 30px 0;
+const Section = styled.section`
+  margin-top: 60px;
+
+  ${MEDIA_QUERY_MD} {
+    margin: 20px 0;
+  }
+`;
+
+const Title = styled.h2`
   text-align: center;
+  margin-bottom: 20px;
+
+  i {
+    display: block;
+    font-size: 14px;
+  }
+
+  ${MEDIA_QUERY_MD} {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 `;
 
 export default Dashboard;

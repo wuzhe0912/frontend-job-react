@@ -1,21 +1,9 @@
 [
   {
-    "title": "可遠端 |Junior 前端工程師_Junior Front-End Engineer",
-    "companyName": "美商優投房台灣辦事處",
-    "companyAddress": "遠端可遠端台灣RemoteremotelyRemote WorkingRemote working可遠端工作遠距遠端工作remote workingremote",
-    "salary": "500K ~ 800K TWD/year"
-  },
-  {
     "title": "前端工程師 Front-end developer (React)",
     "companyName": "橘色北極熊有限公司",
     "companyAddress": "台北",
-    "salary": "1M ~ 1.5M TWD/year"
-  },
-  {
-    "title": "25sprout Project Front-End Developer 專案前端工程師",
-    "companyName": "新芽網路股份有限公司",
-    "companyAddress": "松山區捷運小巨蛋站",
-    "salary": ""
+    "salary": "1.1M ~ 1.5M TWD/year"
   },
   {
     "title": "前端工程師  Front End Engineer (Mid~Senior)",
@@ -24,16 +12,10 @@
     "salary": "840K ~ 1.8M TWD/year"
   },
   {
-    "title": "Frontend Developer_ 前端工程師",
-    "companyName": "OpenNet 開網有限公司",
-    "companyAddress": "台北市中正區台北台灣",
-    "salary": "650K ~ 1.5M TWD/year"
-  },
-  {
-    "title": "Senior Frontend Developer - 資深前端工程師",
-    "companyName": "BeeInventor 點子建有限公司",
-    "companyAddress": "台北市中山區玉門街1號",
-    "salary": "1M ~ 1.3M TWD/year"
+    "title": "25sprout Project Front-End Developer 專案前端工程師",
+    "companyName": "新芽網路股份有限公司",
+    "companyAddress": "松山區捷運小巨蛋站",
+    "salary": ""
   },
   {
     "title": "Frontend Developer (React)",
@@ -48,22 +30,16 @@
     "salary": "900K ~ 1.2M TWD/year"
   },
   {
-    "title": "Senior Front-End Engineer 資深前端工程師",
-    "companyName": "Pelith",
-    "companyAddress": "台北市中正區",
-    "salary": "1M ~ 2M TWD/year"
-  },
-  {
     "title": "電商Web前端工程師",
     "companyName": "Branch8",
     "companyAddress": "台北台灣Remote遠端工作",
     "salary": "550K ~ 950K TWD/year"
   },
   {
-    "title": "Front-end Web Engineer 網頁前端工程師",
-    "companyName": "Wootrade 吾萃科技",
-    "companyAddress": "台北市中山區樂群二路189號6樓之一",
-    "salary": "1M ~ 2M TWD/year"
+    "title": "Senior Frontend Developer - 資深前端工程師",
+    "companyName": "BeeInventor 點子建有限公司",
+    "companyAddress": "",
+    "salary": "1M ~ 1.3M TWD/year"
   },
   {
     "title": "【R&D】(資深) 網站前端開發工程師 (擴編 10人)",
@@ -72,16 +48,16 @@
     "salary": "700K ~ 1.5M TWD/year"
   },
   {
-    "title": "前端軟體工程師 / Front-End Software Engineer (年薪700,000起~)",
+    "title": "前端軟體工程師 / Front-End Software Engineer (年薪700,000起~)【部份遠端】",
     "companyName": "meepShop 網路開店平台",
     "companyAddress": "新北永和台北",
     "salary": "700K ~ 700K TWD/year"
   },
   {
-    "title": "(Sr.) Front-end Engineer (資深)前端工程師 (Vue)",
-    "companyName": "CRUISYS 巡辰股份有限公司",
-    "companyAddress": "台北中正區",
-    "salary": "700K ~ 1.2M TWD/year"
+    "title": "Senior Front-End Engineer 資深前端工程師",
+    "companyName": "Pelith",
+    "companyAddress": "台北市中正區",
+    "salary": "1M ~ 2M TWD/year"
   },
   {
     "title": "Senior Front-end Developer, Arc",
@@ -96,12 +72,6 @@
     "salary": "800K ~ 1.5M TWD/year"
   },
   {
-    "title": "Software Engineer, Frontend 網頁前端工程師",
-    "companyName": "Kronos Research 麒點科技",
-    "companyAddress": "台北市信義區松高路1號7樓",
-    "salary": "1M ~ 2M TWD/year"
-  },
-  {
     "title": "Senior Frontend Developer (React) 前端工程師",
     "companyName": "漸強實驗室 Crescendo Lab Ltd.",
     "companyAddress": "台北",
@@ -112,12 +82,6 @@
     "companyName": "天堂遊戲有限公司",
     "companyAddress": "台北",
     "salary": "1M ~ 2M TWD/year"
-  },
-  {
-    "title": "Front-End Class Instructor (前端技術導師)",
-    "companyName": "AppWorks School",
-    "companyAddress": "信義區",
-    "salary": "750K ~ 1.2M TWD/year"
   },
   {
     "title": "Frontend Engineer",
@@ -138,14 +102,8 @@
     "salary": "700K ~ 900K TWD/year"
   },
   {
-    "title": "Senior React Front-end Engineer",
-    "companyName": "事事問股份有限公司",
-    "companyAddress": "新店新店區公所",
-    "salary": "800K ~ 1M TWD/year"
-  },
-  {
     "title": "Front-End Engineer 網頁前端工程師",
-    "companyName": "騰飛資訊有限公司",
+    "companyName": "晶峰科技有限公司",
     "companyAddress": "大安區台北",
     "salary": "800K ~ 1.4M TWD/year"
   },
@@ -154,6 +112,12 @@
     "companyName": "GliaCloud 集雅科技",
     "companyAddress": "台北",
     "salary": "560K ~ 900K TWD/year"
+  },
+  {
+    "title": "Junior 前端工程師_Junior Front-End Engineer_可遠端",
+    "companyName": "美商優投房台灣辦事處",
+    "companyAddress": "台北",
+    "salary": "500K ~ 800K TWD/year"
   },
   {
     "title": "Junior Web Frontend Developer",
@@ -172,6 +136,12 @@
     "companyName": "portto | 門戶科技",
     "companyAddress": "台灣台北中山區中山國中捷運站",
     "salary": "1M ~ 2M TWD/year"
+  },
+  {
+    "title": "Frontend Developer_ 前端工程師",
+    "companyName": "OpenNet 開網有限公司",
+    "companyAddress": "台北市中正區台北台灣",
+    "salary": "650K ~ 1.5M TWD/year"
   },
   {
     "title": "軟體開發工程師 Software Development Engineer",
@@ -276,12 +246,6 @@
     "salary": "600K ~ 720K TWD/year"
   },
   {
-    "title": "Software Engineer, Frontend",
-    "companyName": "Handshakes Taiwan Co., Ltd",
-    "companyAddress": "TaipeiTaipei city",
-    "salary": "600K ~ 1.2M TWD/year"
-  },
-  {
     "title": "(Senior)Front-End Engineer 網頁前端工程師",
     "companyName": "SHOPLINE 商線科技",
     "companyAddress": "台北",
@@ -292,6 +256,12 @@
     "companyName": "食我網路股份有限公司（Eatgether）",
     "companyAddress": "台北",
     "salary": "650K ~ 1M TWD/year"
+  },
+  {
+    "title": "Software Engineer, Frontend",
+    "companyName": "Handshakes Taiwan Co., Ltd",
+    "companyAddress": "TaipeiTaipei city",
+    "salary": "600K ~ 1.2M TWD/year"
   },
   {
     "title": "COCOS creator",
@@ -340,6 +310,12 @@
     "companyName": "H2 Inc.",
     "companyAddress": "台北內湖西湖捷運站內湖科技園區",
     "salary": "560K ~ 1.2M TWD/year"
+  },
+  {
+    "title": "Front-end Web Engineer 網頁前端工程師",
+    "companyName": "Wootrade 吾萃科技",
+    "companyAddress": "台北市中山區樂群二路189號6樓之一",
+    "salary": "1M ~ 2M TWD/year"
   },
   {
     "title": "Web前端工程師",
@@ -394,6 +370,12 @@
     "companyName": "自力耕生股份有限公司",
     "companyAddress": "",
     "salary": "600K ~ 900K TWD/year"
+  },
+  {
+    "title": "Sr. Front-end Engineer 資深前端工程師 (Vue)",
+    "companyName": "CRUISYS 巡辰股份有限公司",
+    "companyAddress": "台北中正區",
+    "salary": "700K ~ 1.2M TWD/year"
   },
   {
     "title": "前端工程師",
@@ -562,6 +544,12 @@
     "companyName": "1111獵才顧問中心Executive Recruiting Consultancy Dept.",
     "companyAddress": "台北市信義區",
     "salary": "1M ~ 1.4M TWD/year"
+  },
+  {
+    "title": "前端(網站)開發工程師",
+    "companyName": "作品科技有限公司",
+    "companyAddress": "內湖科技園區",
+    "salary": "560K ~ 1.5M TWD/year"
   },
   {
     "title": "Senior Frontend Engineer",

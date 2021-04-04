@@ -16,27 +16,21 @@ export const getMedian = (arr) => {
 
 // 眾數
 export const getMode = (arr) => {
-  let countList = {};
-  for (let value of arr) {
-    value = value.toString();
-    if (!countList[value]) countList[value] = 0;
-    countList[value]++;
-  }
+  const map = new Map();
+  let maxFreq = 0;
+  let mode;
 
-  let maxCount = 0;
-  let mode = [];
-  for (let prop in countList) {
-    if (maxCount < countList[prop]) {
-      maxCount = countList[prop];
-      mode = [prop];
-    } else if (maxCount === countList[prop]) {
-      mode.push(prop);
+  for (const item of arr) {
+    let freq = map.has(item) ? map.get(item) : 0;
+    freq++;
+
+    if (freq > maxFreq) {
+      maxFreq = freq;
+      mode = item;
     }
+
+    map.set(item, freq);
   }
 
-  if (mode.length === Object.keys(countList).length) {
-    mode = [];
-  }
-
-  return mode;
+  return parseInt(mode);
 };

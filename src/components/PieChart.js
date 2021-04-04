@@ -8,7 +8,6 @@ const PieChart = ({ data }) => {
       <Pie
         data={data}
         options={{
-          responsive: true,
           maintainAspectRatio: true,
         }}
       ></Pie>

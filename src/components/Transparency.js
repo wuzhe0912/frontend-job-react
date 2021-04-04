@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import styled from 'styled-components';
 import PieChart from 'components/PieChart';
 import { filter104Salary, filterCakeSalary } from 'components/TransparencyData';
+import { Wrapper, Card } from 'constant/ShareStyle';
 
 const Transparency = () => {
   const [pieChartData, setPieChartData] = useState({});
@@ -39,25 +39,15 @@ const Transparency = () => {
   };
 
   return (
-    <TransparencyWrapper>
-      <TransparencyCard>
+    <Wrapper>
+      <Card>
         <PieChart data={pieChartData}></PieChart>
-      </TransparencyCard>
-      <TransparencyCard>
+      </Card>
+      <Card>
         <PieChart data={cakePieChartData}></PieChart>
-      </TransparencyCard>
-    </TransparencyWrapper>
+      </Card>
+    </Wrapper>
   );
 };
-
-const TransparencyWrapper = styled.section`
-  display: flex;
-  justify-content: space-around;
-`;
-
-const TransparencyCard = styled.article`
-  width: 500px;
-  height: 100%;
-`;
 
 export default Transparency;
