@@ -1,11 +1,11 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import { Dashboard, Login, Error, PrivateRoute, AuthWrapper } from 'views';
 
 const Router = () => {
   return (
     <AuthWrapper>
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <PrivateRoute path="/" exact={true}>
             <Dashboard></Dashboard>
@@ -13,7 +13,7 @@ const Router = () => {
           <Route path="/login" component={Login}></Route>
           <Route component={Error}></Route>
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </AuthWrapper>
   );
 };
