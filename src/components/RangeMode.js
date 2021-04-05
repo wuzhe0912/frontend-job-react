@@ -26,8 +26,8 @@ const RangeMode = () => {
     const yearDownCakeMode = getMode(rangeSalary.yearDownArrayCake);
     const yearUp104Mode = getMode(rangeSalary.yearUpArray104);
     const yearUpCakeMode = getMode(rangeSalary.yearUpArrayCake);
-    const yearDown104 = [yearDown104Mode, yearDownCakeMode];
-    const yearDownCake = [yearUp104Mode, yearUpCakeMode];
+    const yearDown104 = [yearDown104Mode, yearUp104Mode];
+    const yearDownCake = [yearDownCakeMode, yearUpCakeMode];
 
     setBarChartData({
       labels: ['月薪下限眾數', '月薪上限眾數'],

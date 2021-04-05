@@ -26,8 +26,8 @@ const Range = () => {
     const yearDownCakeMedian = getMedian(rangeSalary.yearDownArrayCake);
     const yearUp104Median = getMedian(rangeSalary.yearUpArray104);
     const yearUpCakeMedian = getMedian(rangeSalary.yearUpArrayCake);
-    const yearDown104 = [yearDown104Median, yearDownCakeMedian];
-    const yearDownCake = [yearUp104Median, yearUpCakeMedian];
+    const yearDown104 = [yearDown104Median, yearUp104Median];
+    const yearDownCake = [yearDownCakeMedian, yearUpCakeMedian];
 
     setBarChartData({
       labels: ['月薪下限中位數', '月薪上限中位數'],
