@@ -9,7 +9,7 @@ const HorizontalBarChart = ({ data }) => {
         options={{
           maintainAspectRatio: true,
           scales: {
-            yAxes: [
+            xAxes: [
               {
                 ticks: {
                   beginAtZero: true,

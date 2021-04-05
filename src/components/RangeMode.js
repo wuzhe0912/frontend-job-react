@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { filterRange } from 'components/CountSalary';
-import BarChart from 'components/BarChart';
+import HorizontalBar from 'components/HorizontalBarChart';
 import { getMode } from 'components/Math';
 import { Wrapper, Card } from 'constant/ShareStyle';
 
@@ -73,10 +73,10 @@ const RangeMode = () => {
   return (
     <Wrapper>
       <Card>
-        <BarChart data={barChartData}></BarChart>
+        <HorizontalBar data={barChartData}></HorizontalBar>
       </Card>
       <Card>
-        <BarChart data={yearBarChartData}></BarChart>
+        <HorizontalBar data={yearBarChartData}></HorizontalBar>
       </Card>
     </Wrapper>
   );
